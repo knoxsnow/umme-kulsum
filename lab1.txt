@@ -1,0 +1,173 @@
+1)
+mkdir 3vc23cs400
+cd 3vc23cs400
+git init
+git config --list
+git config --global user.name""
+git config --global user.gmail""
+git clone 
+cd 3vc23cs400
+echo "hello git and github" >> lab1.txt
+git add lab1.txt
+git status
+git commite -m "fristmsg"
+git push origin main
+
+2)
+vi one.c
+(include
+void main()
+{
+printf("mesiging");
+}<f2>)(for exit press esc:wq enter)
+git add one.c
+git commite -m "create one.c"
+vi two.c
+(for exit press esc:wq enter)
+git add two.c
+git commite -m "create two.c"
+git logo
+git status
+git branch b1
+git branch b2
+git branch
+git checkout b1
+git status
+echo "in branch b1 hello world" >> lab3.txt
+echo "in branch b1 branching world" >> lab4.txt
+git add lab3.c
+git add lab4.c
+git commit -m "lab3 for b1"
+git checkout b2
+git status
+echo "in branch b2 hello world" >> lab5.txt
+echo "in branch b2 branching world" >> lab6.txt
+git add lab5.c
+git add lab6.c
+git commit -m "lab5 and lab6 in branch b2"
+git checkout main
+git diff main..b1
+git merge b1
+git branch --merged
+git branch -d b1
+git branch -d b2
+git status
+git merge b2
+git branch --merged
+git branch -d b2
+3)
+vi index.txt
+(for exit press esc:wq enter)
+git add index.txt
+git commit -m "create  indes file"
+git branch feature
+git checkout feature
+vi feature.txt
+(for exit press esc:wq enter)
+git add feature.txt
+git status
+git checkout main
+git stash
+git status
+git stash list
+git checkout main
+git checkout feature
+git stash pop
+git stash list
+git add .
+git commite "create indes file changed in feature"
+5)
+vi index.txt
+git add .
+git commit -m"create indes file"
+git pull (lint of intal commite link paste)
+ls
+Step 2:  settings developers setting →personal access tokens→personal acess tokens(classic)→genetrate new token
+Step 3:  name →mytoken
+Expiration → customize to 6 months
+Select all box and submit
+Copy token in 
+Step 4: go to git bash paste 
+git  remote set-url origin
+6)
+vi pgm6.c
+(for exit press esc:wq enter)
+git add pgm6.c
+git commit -m "program 6"
+git branch feature-branch
+vi pgm6b.c
+(include<stdio.h>
+void main()
+{
+printf(" in feature-branch");
+}(for exit press esc:wq enter)
+git add pgm6b.c
+git commit -m "pgm 6b"
+git ccheckout master
+git merge --no-off feauture-branch -m "your custom merge commit message"
+7)
+git checkout main 
+git tag v1.0
+git tag
+git tag -a v1.1 -m "tag for release ver 1.1"
+git tag
+git show v1.0
+8)
+git checkout main
+echo "iam in 8a">> lab8.txt
+git add .
+git commit -m "iam in 8a branch main"
+git logo
+git show(commite link paste )
+9)
+git checkout main
+echo "iam in 9a" >> lab9a.txt
+git add .
+git commit -m "iam in 9a branch main "
+git branch cherry
+git log
+git checkout cherry
+git checkout main
+echo "iam in 9b" >> lab9b.txt
+git add .
+git commit -m "iam in 9b branch cherry "
+echo "iam in 9c" >> lab9c.txt
+git add .
+git commit -m "iam in 9c branch cherry "
+git checkout main
+git log
+git cherry-pick(commite link paste )
+git log
+10)
+echo "iam in 10a" >> lab10a.txt
+git add .
+echo "iam in 10b" >> lab10b.txt
+git add .
+echo "iam in 10c" >> lab10c.txt
+git add .
+git log --author="username" --since='2024-03-23 --until="2024-04-23"
+11)
+echo "iam in 11a" >> lab11a.txt
+echo "iam in 11b" >> lab11b.txt
+echo "iam in 11c" >> lab11c.txt
+echo "iam in 11d" >> lab11d.txt
+echo "iam in 11e" >> lab11e.txt
+git add .
+git commite -m "create indes file"
+git log -n5
+12)
+git checkout main
+vi 12a.txt
+git add .
+git commit -m "iam in 12a branch main"
+vi 12b.txt
+git add .
+git commit -m "iam in 12b branch main"
+vi 12a.txt
+(iam in 12a main branch)
+git add .
+git commit -m "iam in 12a branch main"
+vi 12b.txt
+(iam in 12b main branch)
+git add .
+git commit -m "iam in 12b branch main"
